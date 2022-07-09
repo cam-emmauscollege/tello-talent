@@ -1,7 +1,7 @@
 # tello-talent
 
 ## Inleiding
-Tello talent bestaat uit twee onderdelen: de educatieve Tello drone en een extra programmeerbaar element, de RMTT (remote Tello Talent o.i.d.). De educatieve Tello is in zichzelf al via telemetrie te besturen. Hiervoor moet je bijv. met een laptop verbinden met het WiFi SSID van de Tello en met een app die UDP packets over poort 8889 kan zenden de berichten versturen. De SDK waarmee de Tello bestuurd kan worden is [hier](https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf) te vinden. Deze bestanden zijn ook aan dit repository toegevoegd.
+Tello Talent bestaat uit twee onderdelen: de educatieve Tello drone en een extra programmeerbaar element, de RMTT (remote Tello Talent o.i.d.). De educatieve Tello is in zichzelf al via telemetrie te besturen. Hiervoor moet je bijv. met een laptop verbinden met het WiFi SSID van de Tello en met een app die UDP packets over poort 8889 kan zenden de berichten versturen. De SDK waarmee de Tello bestuurd kan worden is [hier](https://dl.djicdn.com/downloads/RoboMaster+TT/Tello_SDK_3.0_User_Guide_en.pdf) te vinden. Deze bestanden zijn ook aan dit repository toegevoegd.
 
 De RMTT kan deze commando's ook via de seriële ingang van de Tello verzenden, met toevoeging van het prefix '[TELLO] '. Antwoorden komen terug met het prefix ETT.
 
