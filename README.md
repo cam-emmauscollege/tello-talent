@@ -17,7 +17,7 @@ De RMTT bevat een ESP32 controller die los programmeerbaar is. Op het moment dat
 
 De RMTT is te programmeren met het Arduino framework. Hiervoor zijn libraries beschikbaar, zie [hier](https://github.com/RoboMaster/RMTT_Libs). Deze libaries zijn ook aan dit repo toegevoegd. 
 
-De RMTT heeft een RGB-led aan de bovenkant en een drukknop aan de zijkant. Deze zijn los aan te sturen of uit te lezen, evt. via de RMTT-libraries. De RMTT heeft ook een connector waarop een meegeleverd accessoire kan worden aangesloten of andere, zelfgemaakte hardware. Hiervoor is bij de drone een los printje meegeleverd die de connector omzet naar (holes voor)dupont pins met een 2.54 spacing. Het meegeleverde accessoire is een 8x8 matrix met RGB leds met daarbovenop een TOF-afstandsmeter die metingen kan doen tot 2 meter.
+De RMTT heeft een RGB-led aan de bovenkant (pins 32, 33, 25) en een drukknop (pin 34) aan de zijkant. Deze zijn los aan te sturen of uit te lezen, evt. via de RMTT-libraries. De RMTT heeft ook een connector waarop een meegeleverd accessoire kan worden aangesloten of andere, zelfgemaakte hardware. Hiervoor is bij de drone een los printje meegeleverd die de connector omzet naar (holes voor)dupont pins met een 2.54 spacing. Het meegeleverde accessoire is een 8x8 matrix met RGB leds met daarbovenop een TOF LIDAR afstandsmeter (de VL53L0X) die metingen kan doen tot 2 meter en waarmee je 1D-gebaren kunt detecteren.
 
 ## Arduino IDE voorbereiden
 Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aan de Arduino IDE:
@@ -33,3 +33,15 @@ Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aa
   - Partition Scheme: "Minimal (1.3MB APP/700KB SPIFFS)"
 - Bij het aansluiten is de RMTT onder 'Poort' te vinden als 'usbserialxxx'.
 - De default serial port baudrate is 115200. Het is raadzaam dit standaard aan te houden, ook in eigen seriële communicatie omdat fouten ook met die baudrate worden gecommuniceerd.
+
+## RMTT library
+De library heeft een aantal classes waarmee de verschillende componenten van de RMTT **en** de communicatie met de Tello gemakkelijk geregeld kunnen worden:
+- RMTT_Protocol -> biedt een interface om gemakkelijk te communiceren met de Tello drone
+- RMTT_Matrix -> hiermee kun je gemakkelijk de RGB-led matrix besturen
+- RMTT_RGB -> class die gemakkelijke besturing voor de RGB-led bovenop biedt
+- RMTT_TOF -> interface voor de LIDAR sensor, afkomstig van [https://github.com/pololu/vl53l0x-arduino]
+- RMTT_Libs -> bovenstaande (en meer) classes in één keer importeren
+
+De library biedt meer, maar de exacte werking daarvan is niet altijd even duidelijk.
+
+LET OP: de libary levert ook voorbeelden, maar deze voorbeelden maken niet overal gebruik van alle functies. Soms is de code veel minder mooi dan met de aangeleverde functies zou kunnen. Kortom: een beetje een rommeltje.
