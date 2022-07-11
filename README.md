@@ -67,7 +67,7 @@ Hash of data verified.
 Leaving...
 Hard resetting via RTS pin...
 ```
-- Het lampje bovenop het ESP32 board gaat aan en uit als een soort hartslag.
+- Het lampje bovenop de RTMM gaat aan en uit als een soort hartslag.
 
 ## Je drone laten vliegen met een programma
 - Doe dezelfde stappen als bij je eerste programma hierboven, maar:
