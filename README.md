@@ -55,9 +55,8 @@ Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE
 
 ## Je eerste programma in de drone zetten
 - Sluit de RMTT met het zwarte kabeltje aan op de drone
-- Welke stand moet de kleine schakelaar op de RMTT? 
+- De stand van de schakelaar op de RTMM maakt niet uit, zet hem omlaag op het telefoon icoontje.
 - Sluit een kabel aan tussen je computer en de RMTT
-- Zet de Tello aan met de knop aan de zijkant (dit is misschien niet nodig, zolang de RMTT is aangesloten op de computer?)
 - Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> "led"
 - Kies in het menu "Schets" -> "Upload"
 - Je ziet de melding "Schets aan het compileren" en vervolgens "Schets aan het uploaden" onder de code verschijnen. Daaronder verschijnen meldingen hoe het verloopt (of errrors). Als het goed is gegaan dan is de laatste melding:
@@ -68,11 +67,13 @@ Leaving...
 Hard resetting via RTS pin...
 ```
 - Het lampje bovenop de RTMM gaat aan en uit als een soort hartslag.
+- Als je de Tello aanzet met de knop aan de zijkant, dan krijgt de RMTT stroom uit de batterij in de Tello. Je kunt de kabel met de computer dan eruit halen, terwijl het programma draait. De RMTT onthoudt het programma dat je erin hebt gestopt als je de stroom eraf haalt. 
+- Als je RMTT stopt op het moment dat je de stekker van de computer eruit trekt, dan staat de Tello uit of is de batterij van de Tello leeg. Het rode lichtje op de Tello knippert rood als de batterij bijna op is.
 
 ## Je drone laten vliegen met een programma
 - Doe dezelfde stappen als bij je eerste programma hierboven, maar:
-- Zet je drone op een veilige plaats, hij gaat ongeveer een meter de lucht in land dan weer
-- Kies het voorbeeldprogramma "" (nog in vullen welke)
-- Na het uploaden van je programma check je dat de drone aanstaat, de schakelaar op de RMTT omlaag is (telefoon icoontje), maak je verbinding met de Tello via wifi met de Tello app (is dit echt nodig?)
-- Druk op het knopje aan de zijkant van de RMTT, je programma wacht met vliegen totdat je deze knop hebt ingedrukt.
+- Zet je drone op een veilige plaats, hij gaat ongeveer een meter de lucht in land dan weer.
+- Kies het voorbeeldprogramma "io_ctrl".
+- Na het uploaden van je programma check je dat de drone aanstaat en haal je de stekker van de computer uit de RTMM.
+- Druk op het knopje aan de zijkant van de RMTT, je Tello gaat vliegen nadat je deze knop hebt ingedrukt.
 
