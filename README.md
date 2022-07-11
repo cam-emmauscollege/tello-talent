@@ -21,7 +21,7 @@ De RMTT heeft een RGB-led aan de bovenkant (pins 32, 33, 25) en een drukknop (pi
 
 ## Arduino IDE voorbereiden
 Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aan de Arduino IDE:
-- Ga naar de voorkeuren van het programma en vul deze URL in bij Additional Board Manager URLs: https://dl.espressif.com/dl/package_esp32_index.json
+- Ga naar de voorkeuren van het programma en vul deze URL in bij Additional Board Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
 - Zoek in de Board Manager naar 'esp32' en installeer deze boards.
 - Kies 'ESP32 WRover Kit (all versions)
 - Kies de volgende instellingen:
