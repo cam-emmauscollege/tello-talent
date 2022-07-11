@@ -56,10 +56,10 @@ Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE
 - Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> "led"
 - Kies in het menu "Schets" -> "Upload"
 - Je ziet de melding "Schets aan het compileren" en vervolgens "Schets aan het uploaden" onder de code verschijnen. Daaronder verschijnen meldingen hoe het verloopt (of errrors). Als het goed is gegaan dan is de laatste melding:
-'''
+```
 Hash of data verified.
 
 Leaving...
 Hard resetting via RTS pin...
-'''
+```
 - Het lampje bovenop het ESP32 board gaat aan en uit als een soort hartslag.
