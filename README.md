@@ -25,7 +25,7 @@ De RMTT heeft een RGB-led aan de bovenkant (pins 32, 33, 25) en een drukknop (pi
 Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aan de Arduino IDE:
 - Ga naar de voorkeuren van het programma en vul deze URL in bij Additional Board Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
 - Zoek in de Board Manager naar 'esp32' en installeer deze boards. De Board Manager vind je in de Arduino IDE in het menu Hulpmiddelen -> Board:... -> Board Beheer. Zoek in het window dat verschijnt op esp32, er verschijnt 1 optie, druk op installeren. Druk op sluiten als de installatie gereed is.
-- Kies het board 'ESP32 WRover Kit (all versions)', je vind dit in het menu Hulpmiddelen -> Board:... -> ESP32... -> ESP32 WRover...-> Zoek in de Board Manager naar 'esp32' en installeer deze boards.
+- Kies het board 'ESP32 WRover Kit (all versions)', je vindt dit in het menu "Hulpmiddelen" -> "Board:..." -> "ESP32 Arduino" -> "ESP32 WRover Kit (all versions)".
 - In het menu Hulpmiddelen zijn nu een aantal extra opties toegevoegd om instellingen te doen. Kies de volgende instellingen:
   - Upload speed: "921600"
   - CPU Frequency: "240MHz (WiFi/BT)" --> onzeker over noodzaak van deze instelling, is misschien niet helemaal correct
@@ -49,7 +49,7 @@ De library biedt meer, maar de exacte werking daarvan is niet altijd even duidel
 LET OP: de libary levert ook voorbeelden, maar deze voorbeelden maken niet overal gebruik van alle functies. Soms is de code veel minder mooi dan met de aangeleverde functies zou kunnen. Kortom: een beetje een rommeltje.
 
 Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE. Op de schoolcomputers moet dat elke keer als je opnieuw inlogt, op je eigen computer hoeft dat maar één keer. Installeren gaat als volgt:
-- Download de library in zip-formaat (RMTTlib.zip) van Github. Een Macbook pakt zip-bestanden automatische uit, je moet daarom na downloaden het zip-bestand weer inpakken. Dit doe je door met je rechtmuisknop op de map RMTTlib (in Downloads) te klikken en in het menu dat verschijnt te kiezen voor "Comprimeer TMTTlib".
+- Download de library in zip-formaat (RMTTlib.zip) uit de repo. Een Macbook pakt zip-bestanden automatische uit, je moet daarom na downloaden het zip-bestand weer inpakken. Dit doe je door met je rechtmuisknop op de map RMTTlib (in Downloads) te klikken en in het menu dat verschijnt te kiezen voor "Comprimeer RMTTlib".
 - Kies de Arduino IDE het menu "Schets" -> "Bibliotheek gebruiken" -> "Voeg .ZIP bibliotheek toe" -> kies het bestand RMTTlib.zip
 - Als het gelukt is, dan zie je RMTTlib staan in de Arduino IDE bij het menu "Bestand" -> "Voorbeelden"
 
