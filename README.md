@@ -22,9 +22,9 @@ De RMTT heeft een RGB-led aan de bovenkant (pins 32, 33, 25) en een drukknop (pi
 ## Arduino IDE voorbereiden
 Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aan de Arduino IDE:
 - Ga naar de voorkeuren van het programma en vul deze URL in bij Additional Board Manager URLs: https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
-- Zoek in de Board Manager naar 'esp32' en installeer deze boards.
-- Kies 'ESP32 WRover Kit (all versions)
-- Kies de volgende instellingen:
+- Zoek in de Board Manager naar 'esp32' en installeer deze boards. De Board Manager vind je in de Arduino IDE in het menu Hulpmiddelen -> Board:... -> Board Beheer. Zoek in het window dat verschijnt op esp32, er verschijnt 1 optie, druk op installeren. Druk op sluiten als de installatie gereed is.
+- Kies het board 'ESP32 WRover Kit (all versions)', je vind dit in het menu Hulpmiddelen -> Board:... -> ESP32... -> ESP32 WRover...-> Zoek in de Board Manager naar 'esp32' en installeer deze boards.
+- In het menu Hulpmiddelen zijn nu een aantal extra opties toegevoegd om instellingen te doen. Kies de volgende instellingen:
   - Upload speed: "921600"
   - CPU Frequency: "240MHz (WiFi/BT)" --> onzeker over noodzaak van deze instelling, is misschien niet helemaal correct
   - Flash Frequency: "40MHz"
