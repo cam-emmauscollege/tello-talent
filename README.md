@@ -5,7 +5,7 @@ Tello Talent bestaat uit twee onderdelen: de educatieve Tello drone en een extra
 
 De RMTT kan deze commando's ook via de seriële ingang van de Tello verzenden, met toevoeging van het prefix '[TELLO] '. Antwoorden komen terug met het prefix ETT.
 
-De Tello kan worden geupdate met de laatste firmware via de Tello app uit de appstore (bij GEE op zijn telefoon werkt deze app niet). Leerlingen krijgen de drone in principe met een werkende software versie, dus die hoeven zich hier geen zorgen over te maken.
+Onze Tello werd geleverd met verouderde firmware, waardoor we in eerste instantie de voorbeeldprogramma's niet allemaal aan de praat kregen. De Tello kan worden geupdate met de laatste firmware via de Tello app uit de appstore (bij GEE op zijn telefoon werkt deze app niet). Leerlingen krijgen de drone in principe met een werkende firmware versie, dus die hoeven zich hier geen zorgen over te maken. Onze Tello is geupdate naar firmware versie 02.05.01.19 (dit is de meest actuele versie op 9 juli 2022).
 
 ## Tello sensors
 De Tello heeft een frontfacing camera die een videostream uit uitvoeren via UDP poort 11111.
