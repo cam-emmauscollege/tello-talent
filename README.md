@@ -34,7 +34,7 @@ Voor het programmeren van de RMTT moeten eerst ESP32 boards worden toegevoegd aa
 - Bij het aansluiten is de RMTT onder 'Poort' te vinden als 'usbserialxxx'.
 - De default serial port baudrate is 115200. Het is raadzaam dit standaard aan te houden, ook in eigen seriële communicatie omdat fouten ook met die baudrate worden gecommuniceerd.
 
-## RMTT library
+## RMTT library installeren
 De library heeft een aantal classes waarmee de verschillende componenten van de RMTT **en** de communicatie met de Tello gemakkelijk geregeld kunnen worden:
 - RMTT_Protocol -> biedt een interface om gemakkelijk te communiceren met de Tello drone
 - RMTT_Matrix -> hiermee kun je gemakkelijk de RGB-led matrix besturen
@@ -45,3 +45,21 @@ De library heeft een aantal classes waarmee de verschillende componenten van de 
 De library biedt meer, maar de exacte werking daarvan is niet altijd even duidelijk.
 
 LET OP: de libary levert ook voorbeelden, maar deze voorbeelden maken niet overal gebruik van alle functies. Soms is de code veel minder mooi dan met de aangeleverde functies zou kunnen. Kortom: een beetje een rommeltje.
+
+Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE. Op de schoolcomputers moet dat elke keer als je opnieuw inlogt, op je eigen computer hoeft dat maar één keer. Installeren gaat als volgt:
+- Download de library in zip-formaat (RMTTlib.zip) van Github. Een Macbook pakt zip-bestanden automatische uit, je moet daarom na downloaden het zip-bestand weer inpakken. Dit doe je door met je rechtmuisknop op de map RMTTlib (in Downloads) te klikken en in het menu dat verschijnt te kiezen voor "Comprimeer TMTTlib".
+- Kies de Arduino IDE het menu "Schets" -> "Bibliotheek gebruiken" -> "Voeg .ZIP bibliotheek toe" -> kies het bestand RMTTlib.zip
+- Als het gelukt is, dan zie je RMTTlib staan in de Arduino IDE bij het menu "Bestand" -> "Voorbeelden"
+
+## Je eerste programma in de drone zetten
+- Sluit een kabel aan tussen je computer en het ESP32 board
+- Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> "led"
+- Kies in het menu "Schets" -> "Upload"
+- Je ziet de melding "Schets aan het compileren" en vervolgens "Schets aan het uploaden" onder de code verschijnen. Daaronder verschijnen meldingen hoe het verloopt (of errrors). Als het goed is gegaan dan is de laatste melding:
+'''
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+'''
+- Het lampje bovenop het ESP32 board gaat aan en uit als een soort hartslag.
