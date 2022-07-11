@@ -5,6 +5,8 @@ Tello Talent bestaat uit twee onderdelen: de educatieve Tello drone en een extra
 
 De RMTT kan deze commando's ook via de seriële ingang van de Tello verzenden, met toevoeging van het prefix '[TELLO] '. Antwoorden komen terug met het prefix ETT.
 
+De Tello kan worden geupdate met de laatste firmware via de Tello app uit de appstore (bij GEE op zijn telefoon werkt deze app niet). Leerlingen krijgen de drone in principe met een werkende software versie, dus die hoeven zich hier geen zorgen over te maken.
+
 ## Tello sensors
 De Tello heeft een frontfacing camera die een videostream uit uitvoeren via UDP poort 11111.
 
@@ -13,7 +15,7 @@ De Tello heeft ook een downfacing camera voor het herkennen van mission pads. De
 De Tello heeft ook een (infrarood?)sensor voor de afstand tot de grond. Onbekend is nog hoe / of deze uitgevraagd kan worden.
 
 ## RMTT programmeren
-De RMTT bevat een ESP32 controller die los programmeerbaar is. Op het moment dat de RMTT op de Tello wordt aangesloten, verandert het SSID van 'TELLO.....' naar 'RMTT.....'. Het lijkt erop dat de TELLO zijn WiFi op dat moment uitzet en de RMTT het SSID presenteert. Dit heb ik echter nog niet met zekerheid kunnen terugvinden. Het zou kunnen dat het nog steeds de TELLO is die het WiFi netwerk presenteert, maar met een andere SSID.
+Je sluit de RMTT op de Tello aan met het zwarte kabeltje. De RMTT bevat een ESP32 controller die los programmeerbaar is. Op het moment dat de RMTT op de Tello wordt aangesloten, verandert het SSID van 'TELLO.....' naar 'RMTT.....'. Het lijkt erop dat de TELLO zijn WiFi op dat moment uitzet en de RMTT het SSID presenteert. Dit heb ik echter nog niet met zekerheid kunnen terugvinden. Het zou kunnen dat het nog steeds de TELLO is die het WiFi netwerk presenteert, maar met een andere SSID.
 
 De RMTT is te programmeren met het Arduino framework. Hiervoor zijn libraries beschikbaar, zie [hier](https://github.com/RoboMaster/RMTT_Libs). Deze libaries zijn ook aan dit repo toegevoegd. 
 
@@ -52,7 +54,10 @@ Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE
 - Als het gelukt is, dan zie je RMTTlib staan in de Arduino IDE bij het menu "Bestand" -> "Voorbeelden"
 
 ## Je eerste programma in de drone zetten
-- Sluit een kabel aan tussen je computer en het ESP32 board
+- Sluit de RMTT met het zwarte kabeltje aan op de drone
+- Welke stand moet de kleine schakelaar op de RMTT? 
+- Sluit een kabel aan tussen je computer en de RMTT
+- Zet de Tello aan met de knop aan de zijkant (dit is misschien niet nodig, zolang de RMTT is aangesloten op de computer?)
 - Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> "led"
 - Kies in het menu "Schets" -> "Upload"
 - Je ziet de melding "Schets aan het compileren" en vervolgens "Schets aan het uploaden" onder de code verschijnen. Daaronder verschijnen meldingen hoe het verloopt (of errrors). Als het goed is gegaan dan is de laatste melding:
@@ -63,3 +68,11 @@ Leaving...
 Hard resetting via RTS pin...
 ```
 - Het lampje bovenop het ESP32 board gaat aan en uit als een soort hartslag.
+
+## Je drone laten vliegen met een programma
+- Doe dezelfde stappen als bij je eerste programma hierboven, maar:
+- Zet je drone op een veilige plaats, hij gaat ongeveer een meter de lucht in land dan weer
+- Kies het voorbeeldprogramma "" (nog in vullen welke)
+- Na het uploaden van je programma check je dat de drone aanstaat, de schakelaar op de RMTT omlaag is (telefoon icoontje), maak je verbinding met de Tello via wifi met de Tello app (is dit echt nodig?)
+- Druk op het knopje aan de zijkant van de RMTT, je programma wacht met vliegen totdat je deze knop hebt ingedrukt.
+
