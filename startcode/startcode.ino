@@ -74,17 +74,17 @@ void setup() {
   // (in plaats van ten opzichte van opstijgen), dat helpt met de nauwkeurigheid
   
   tt_matrix.SetAllPWM((uint8_t *)matrix_b1); // zet 1 op matrix
-  tello.sendTelloCtrlMsg("takeoff"); // opstijgen, pas als de drone opgestegen is gaat het programma naar de volgende regel
+  tello.TakeOff(); // opstijgen, pas als de drone opgestegen is gaat het programma naar de volgende regel
   
   tt_matrix.SetAllPWM((uint8_t *)matrix_b2); // zet 2 op matrix
-  tello.sendTelloCtrlMsg("left 30"); // wat niet werkt: tello.Left(30); => later uitzoeken
+  tello.Left(30); // wat niet werkt: tello.Left(30); => later uitzoeken
   
   tt_matrix.SetAllPWM((uint8_t *)matrix_b3); // zet 3 op matrix
   // tello.sendTelloCtrlMsg("flip l"); // flip is draai over de kop, niet nuttig, wel leuk
   
-  tello.sendTelloCtrlMsg("right 30");
+  tello.Right(30);
   
-  tello.sendTelloCtrlMsg("land");
+  tello.Land();
 }
 
 void loop() {
