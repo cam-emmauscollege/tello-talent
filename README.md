@@ -66,15 +66,17 @@ Leaving...
 Hard resetting via RTS pin...
 ```
 - Het lampje bovenop de RTMM gaat aan en uit als een soort hartslag.
-- Als je de Tello aanzet met de knop aan de zijkant, dan krijgt de RMTT stroom uit de batterij in de Tello. Je kunt de kabel met de computer dan eruit halen, terwijl het programma draait. De RMTT onthoudt het programma dat je erin hebt gestopt als je de stroom eraf haalt. 
-- Als je RMTT stopt op het moment dat je de stekker van de computer eruit trekt, dan staat de Tello uit of is de batterij van de Tello leeg. Het rode lichtje op de Tello knippert rood als de batterij bijna op is.
+- Als je de Tello aanzet met de rode knop aan de zijkant, dan krijgt de RMTT stroom uit de batterij in de Tello. Je kunt de kabel met de computer dan eruit halen, terwijl het programma draait. 
+- Als je RMTT stopt op het moment dat je de stekker van de computer eruit trekt, dan staat de Tello uit of is de batterij van de Tello leeg. Het rode lichtje op de Tello knippert rood als de batterij bijna op is. De RMTT onthoudt het programma dat je erin hebt gestopt, ook als je de stroom eraf is geweest. 
 
 ## Je drone laten vliegen met een programma
-- Doe dezelfde stappen als bij je eerste programma hierboven, maar:
 - Zet je drone op een veilige plaats, hij gaat ongeveer een meter de lucht in land dan weer.
-- Kies het voorbeeldprogramma "io_ctrl".
-- Na het uploaden van je programma knippert het lampje op je tello paars als er verbinding is tussen de RTMM en de Tello, het knippert oranje als er geen verbinding is.
-- Als er geen verbinding is:  zet de stand van de schakelaar op de RTMM omlaag, op het telefoon icoontje, verwijder de kabel tussen PC en drone, zet de tello uit en weer aan met de rode knop aan de zijkant van de tello. Wacht ongeveer 10 seconden, het ledje zou nu paars moeten knipperen.
-check je dat de drone aanstaat en haal je de stekker van de computer uit de RTMM.
+- Zet de stand van de schakelaar op de RTMM omlaag, op het telefoon icoontje
+- Sluit de RMTT met het zwarte kabeltje aan op de drone
+- Zet de Tello aan met de rode knop op de zijkant
+- Sluit een kabel aan tussen je computer en de RMTT
+- Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> Kies het voorbeeldprogramma "io_ctrl".
+- Na het uploaden van je programma knippert het lampje op je tello paars als het programma op de RTMM verbinding heeft gemaakt met de Tello, het knippert oranje als er geen verbinding is.
+- Als er geen verbinding is, terwijl je programma de Tello wel zou moeten laten vliegen: zet de stand van de schakelaar op de RTMM omlaag op het telefoon icoontje als je dat eerder vergeten was, verwijder de kabel tussen PC en drone, zet de tello uit en weer aan met de rode knop aan de zijkant van de tello. Wacht ongeveer 10 seconden, het ledje zou nu paars moeten knipperen.
 - Druk op het knopje aan de zijkant van de RMTT, je Tello gaat vliegen nadat je deze knop hebt ingedrukt.
 
