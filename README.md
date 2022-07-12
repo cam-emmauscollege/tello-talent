@@ -55,7 +55,6 @@ Voordat je de library kunt gebruiken, moet je deze installeren in de Arduino IDE
 
 ## Je eerste programma in de drone zetten
 - Sluit de RMTT met het zwarte kabeltje aan op de drone
-- De stand van de schakelaar op de RTMM maakt niet uit, zet hem omlaag op het telefoon icoontje.
 - Sluit een kabel aan tussen je computer en de RMTT
 - Kies "Bestand" -> "Voorbeelden" -> "Tororial" -> "led"
 - Kies in het menu "Schets" -> "Upload"
@@ -74,6 +73,8 @@ Hard resetting via RTS pin...
 - Doe dezelfde stappen als bij je eerste programma hierboven, maar:
 - Zet je drone op een veilige plaats, hij gaat ongeveer een meter de lucht in land dan weer.
 - Kies het voorbeeldprogramma "io_ctrl".
-- Na het uploaden van je programma check je dat de drone aanstaat en haal je de stekker van de computer uit de RTMM.
+- Na het uploaden van je programma knippert het lampje op je tello paars als er verbinding is tussen de RTMM en de Tello, het knippert oranje als er geen verbinding is.
+- Als er geen verbinding is:  zet de stand van de schakelaar op de RTMM omlaag, op het telefoon icoontje, verwijder de kabel tussen PC en drone, zet de tello uit en weer aan met de rode knop aan de zijkant van de tello. Wacht ongeveer 10 seconden, het ledje zou nu paars moeten knipperen.
+check je dat de drone aanstaat en haal je de stekker van de computer uit de RTMM.
 - Druk op het knopje aan de zijkant van de RMTT, je Tello gaat vliegen nadat je deze knop hebt ingedrukt.
 
